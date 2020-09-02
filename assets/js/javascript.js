@@ -60,5 +60,21 @@ $(window).ready(function(){
             buydetail.addClass('hidden');
             buy.removeClass('hidden');
         }
+    });
+    $("#temp1").on('click',function(){
+        if($("#leftmenu").width()==0){
+            $("#leftmenu").width(265)
+            $(".c-mask").width("100%")
+        }
+        else {
+            $("#leftmenu").width()==0
+        }
+    });
+    $(".closeleftmenu").on('click',function(){
+
+        if($("#leftmenu").width()!=0){
+            $("#leftmenu").width(0)
+            $(".c-mask").width(0)
+        }
     })
 });

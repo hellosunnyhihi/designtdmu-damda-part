@@ -20,12 +20,32 @@
 </head>
 
 <body>
+    <div class="c-mask closeleftmenu">
+            
+    </div>
     <div class="sun-container">
+        
         <div class="w-100" id="header">
-            <div class="w-25"></div>
+            <div class="w-25" id="temp1"><button id="temp1">click here</button></div>
             <div class="w-50 text-center"><img src="./assets/img/img_logo.png" alt="Logo"></div>
             <div class="w-25"></div>
         </div>
+        <div class="menu-left-container" id="leftmenu">
+            <div class="title-account">
+                <span>Welcome</span>
+                <i class="fa fa-times closeleftmenu" aria-hidden="true" id="closeleftmenu"></i>
+            </div>
+            <div class="w-100">
+                <img src="./assets/img/nature.jpg" alt="cover" class="cover">
+                
+            </div>
+            <ul class="menu-left w-100">
+                <li class="menu-left-item w-100"><a href="#">123</a></li>
+                <li class="menu-left-item w-100"><a href="#">123</a></li>
+                <li class="menu-left-item w-100"><a href="#">123</a></li>
+            </ul>
+        </div>
+        
         <div class="w-100" id="menu-tabs">
             <ul class="sun-tab">
                 <li class="sun-tab-item text-uppercase text-center"><a href="#">news</a></li>
@@ -95,12 +115,15 @@
             </ul>
         </div>
     </div>
+    
 </div>
+
     <script src="assets/js/jquery.min.js"></script>
     <script src="assets/bootstrap/js/bootstrap.min.js"></script>
     <script src="assets/js/script.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.js"></script>
     <script src="assets/js/owlcarousel.js"></script>
+    <script src="assets/js/javascript.js"></script>
 </body>
 
 </html>

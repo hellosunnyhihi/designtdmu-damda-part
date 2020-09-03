@@ -130,7 +130,12 @@ html,body{
     transition-duration: 1s;
     overflow-x: hidden;
 }
-
+.w-25{
+    width: 25%;
+}
+.w-75{
+    width: 75%;
+}
 
 .menu-left{
     text-decoration: none;
@@ -144,4 +149,42 @@ html,body{
 .menu-left-item:hover{
     background-color: #FF5500;
     color: white;
+}
+
+/*quick cart*/
+.quickcart{
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 0px;
+    z-index: 100;
+    transition-duration: 1s;
+    background-color: white;
+}
+.quickcart-menu{
+    text-decoration: none;
+    list-style: none;
+    padding: 5px;
+}
+.quickcart-menu-item{
+    width: 100%;
+    padding: 5px;
+}
+.quickcart-menu-item:hover{
+    background-color: #f3f3f3;
+    border: 1px #FF5500 double;
+}
+.quickcart-menu-item>div>p{
+    margin-left: 10px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.quickcart-menu-item>div>strong{
+    color: rgb(237, 81, 120);
+    margin-left: 10px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
 }

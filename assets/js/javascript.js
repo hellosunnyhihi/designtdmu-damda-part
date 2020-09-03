@@ -61,20 +61,25 @@ $(window).ready(function(){
             buy.removeClass('hidden');
         }
     });
-    $("#temp1").on('click',function(){
-        if($("#leftmenu").width()==0){
-            $("#leftmenu").width(265)
-            $(".c-mask").width("100%")
-        }
-        else {
-            $("#leftmenu").width()==0
-        }
-    });
     $(".closeleftmenu").on('click',function(){
 
         if($("#leftmenu").width()!=0){
             $("#leftmenu").width(0)
             $(".c-mask").width(0)
         }
-    })
+        if($("#quickcart").width()!=0){
+            $("#quickcart").width(0)
+            $(".c-mask").width(0)
+        }
+    });
+    $("#cart").on('click',function(){
+        if($("#quickcart").width()==0){
+            $("#quickcart").width(265)
+            $(".c-mask").width("100%")
+        }
+        else {
+            $("#quickcart").width()==0
+            $(".c-mask").width(0)
+        }
+    });
 });
